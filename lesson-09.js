@@ -19,7 +19,7 @@ var pic = document.body.appendChild(document.createElement('img'))
 
 
 window.onhashchange = function(event){
-var hash = location.hash.slice (1, 2)
+var hash = location.hash.substring(1)
 if (hash < 0 || hash > 2) {
   hash = 0
   console.error("page not found")
